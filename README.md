@@ -17,8 +17,9 @@ Phones are tempting; when you try to do some quick math operations for an exam, 
 
 ## Implementation Description
 The system is coordinated by the **ATmega328P** microcontroller. The user inputs data using a **4×4 Keypad**. The input software module detects key presses and transmits them to the **Main Logic**, which validates the input and calls the **Display Driver** to update the graphical interface on the **TFT Screen** via the SPI bus. Simultaneously, the logic triggers the **Audio Generator** to emit a confirmation sound through the passive **Buzzer** using a PWM signal. The variable voltage read from the **Potentiometer** adjusts the zoom of the displayed graph. Operations history is written bidirectionally to the **SD Card Module**.
-![System Diagram](./Graphics%20Computer%20Diagram.png)
+
 ---
+![System Diagram](./Graphics%20Computer%20Diagram.png)
 
 ## Hardware Design
 This section outlines the physical implementation of the system, including components and communication protocols.
